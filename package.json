@@ -1,0 +1,28 @@
+{
+  "name": "node-jwt-authenication",
+  "version": "1.0.0",
+  "description": "Basic jwt authenication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jagdeep-Sing/Node-jwt-Authenication.git"
+  },
+  "author": "js86248@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jagdeep-Sing/Node-jwt-Authenication/issues"
+  },
+  "homepage": "https://github.com/Jagdeep-Sing/Node-jwt-Authenication#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
