@@ -1,20 +1,24 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const user = require('./routes/user.route');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/jwauth');
+mongoose.connect('mongodb://localhost/jwtauth');
 
 const PORT = 3000;
 
-app.get('/test', function(req, res){
-    res.json({
-       "message": "Success"
-    });
- });
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
- app.use(bodyParser.urlencoded({extended: false}));
- app.use(bodyParser.json());
+app.get('/checking', function(req, res){
+   res.json({
+      "Tutorial": "Welcome to the Node express JWT Tutorial"
+   });
+});
+
+app.use('/user', user);
+
 app.listen(PORT, function(){
-    console.log('Server running on port', PORT);
+   console.log('Server is running on Port',PORT);
 });
