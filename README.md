@@ -1,6 +1,6 @@
 # Node-jwt-Authenication
 
-A Simple signip/signup app which returns jwt token on success signup
+A Simple signin/signup app which returns jwt token on success signin
 
 <b> Setup </b>
 
